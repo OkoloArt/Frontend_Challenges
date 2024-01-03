@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![result_solution](https://github.com/OkoloArt/Frontend_Challenges/assets/54189037/585b6e61-bba3-49b4-86c7-75441fc254a9)
 
 ### Links
 
