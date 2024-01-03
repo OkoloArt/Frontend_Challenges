@@ -1,0 +1,215 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.semi-container {
+  display: flex;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1), 3px 0px 5px rgba(0, 0, 0, 0.1),
+    0px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 600px;
+  min-width: 200px;
+}
+
+.semi-container > div {
+  flex: 1; /* This will make both child divs take equal width */
+}
+
+.overview {
+  display: flex; /* Added display property */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Vertically centers the content */
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 10px;
+  gap: 2px;
+  padding-inline: 2rem;
+}
+
+.overview div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.first {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  display: block;
+  font-size: 45px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.second {
+  color: hsl(241, 100%, 89%);
+  font-size: 15px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.great {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin-top: 12px;
+}
+
+#result-title {
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(241, 100%, 89%);
+}
+
+.overview p {
+  text-align: center;
+  font-size: 13px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(241, 100%, 89%);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 0.7rem;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  border: 0px;
+  border-radius: 20px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+#summary-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.summary-item .summary-title h5,
+.summary-item p.score {
+  margin: 0;
+  padding: 0;
+}
+
+.summary-item > p.score {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(241, 100%, 89%);
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+span {
+  font-weight: 700;
+  color: black;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.15);
+}
+
+.reaction .summary-title h5 {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.15);
+}
+
+.memory .summary-title h5 {
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.15);
+}
+
+.verbal .summary-title h5 {
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+.visual .summary-title h5 {
+  color: hsl(234, 85%, 45%);
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+  .container {
+    padding: 5px;
+  }
+
+  .semi-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    border: 0;
+    flex: 1;
+    box-shadow: none;
+    max-width: none;
+  }
+
+  .overview {
+    border-radius: 0px 0px 50px 50px;
+    background: linear-gradient(
+      to bottom,
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+    height: fit-content;
+  }
+}
